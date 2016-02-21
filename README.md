@@ -8,21 +8,25 @@ How to create a Telegram Bot using Node.js
 2. Sign in and click on “Add Application” or “Create your first application now” 
 
 3. Select NodeJs 0.10 cartridge 
+![alt text](https://raw.githubusercontent.com/ilbonte/node-telegram-bot-starter-kit/master/1.png)
 
 4. Choose your public url and the region then click “Create Application” (this may take a few seconds)
 
 5. In the next step click “Yes, help me get started” and insert your public SSH key.
 If you already have a key it can be found in “c:\Users\user\.ssh\id_rsa.pub” if you are on windows, otherwise in “~/.ssh/id_rsa”
+![alt text](https://raw.githubusercontent.com/ilbonte/node-telegram-bot-starter-kit/master/2.png)
 
 6. Press “Save” 
 
 ## Set up your repo and install node-telegram-bot-api
 
 1. Clone the repository using the provided url
+![alt text](https://raw.githubusercontent.com/ilbonte/node-telegram-bot-starter-kit/master/3.png)
 
 2. Enter the nodejs folder
 
 3. Run from the terminal `npm install node-telegram-bot-api`
+![alt text](https://raw.githubusercontent.com/ilbonte/node-telegram-bot-starter-kit/master/4.png)
 
 4. Open the file `server.js` and substitute the code with the example provided by https://github.com/yagop/node-telegram-bot-api
 
@@ -33,6 +37,7 @@ If you already have a key it can be found in “c:\Users\user\.ssh\id_rsa.pub”
   * Write the name of your bot
   * Write the username of your bot
   * Copy your token and substitute it to “YOUR_TELEGRAM_BOT_TOKEN” in the file server.js
+  ![alt text](https://raw.githubusercontent.com/ilbonte/node-telegram-bot-starter-kit/master/6.png)
 
 ## Deploy 
 
@@ -46,3 +51,5 @@ Note: ignore failure messages. These errors are reported because our app is not 
 ## Enjoy 
 
 Open your bot on Telegram and write /echo “write-something” and it should reply with the same message you wrote
+
+![alt text](https://raw.githubusercontent.com/ilbonte/node-telegram-bot-starter-kit/master/7.png)
