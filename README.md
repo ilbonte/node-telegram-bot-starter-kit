@@ -1,5 +1,5 @@
 # node-telegram-bot-starter-kit
-How to create a Telegram Bot using Node.js
+How to create a Telegram Bot using Node.js and [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
 # Instructions
 
 ## Choose your hosting
