@@ -1,2 +1,48 @@
 # node-telegram-bot-starter-kit
 How to create a Telegram Bot using Node.js
+# Instructions
+
+## Choose your hosting
+1. I will use www.openshift.com because it offers a free plan.
+
+2. Sign in and click on “Add Application” or “Create your first application now” 
+
+3. Select NodeJs 0.10 cartridge 
+
+4. Choose your public url and the region then click “Create Application” (this may take a few seconds)
+
+5. In the next step click “Yes, help me get started” and insert your public SSH key.
+If you already have a key it can be found in “c:\Users\user\.ssh\id_rsa.pub” if you are on windows, otherwise in “~/.ssh/id_rsa”
+
+6. Press “Save” 
+
+## Set up your repo and install node-telegram-bot-api
+
+1. Clone the repository using the provided url
+
+2. Enter the nodejs folder
+
+3. Run from the terminal `npm install node-telegram-bot-api`
+
+4. Open the file `server.js` and substitute the code with the example provided by https://github.com/yagop/node-telegram-bot-api
+
+## Get your token
+
+5. Open Telegram and search for BotFather (https://telegram.me/botfather)
+  * Write `/newbot`
+  * Write the name of your bot
+  * Write the username of your bot
+  * Copy your token and substitute it to “YOUR_TELEGRAM_BOT_TOKEN” in the file server.js
+
+## Deploy 
+
+1. `git add --all`
+2. `git commit -am ”initial commit”`
+3. `git push origin master`
+This may take few seconds
+
+Note: ignore failure messages. These errors are reported because our app is not listening to any port, but we don’t need to.
+
+## Enjoy 
+
+Open your bot on Telegram and write /echo “write-something” and it should reply with the same message you wrote
