@@ -76,3 +76,5 @@ Note: ignore failure messages. These errors are reported because our app is not 
 Open your bot on Telegram and write /echo “write-something” and it should reply with the same message you wrote
 
 ![alt text](https://raw.githubusercontent.com/ilbonte/node-telegram-bot-starter-kit/master/7.png)
+
+Inspired by: https://github.com/yukuku/telebot
