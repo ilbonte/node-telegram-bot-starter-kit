@@ -1,5 +1,5 @@
 # node-telegram-bot-starter-kit
-How to create a Telegram Bot using Node.js and [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
+How to set up a Telegram Bot using Node.js and [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
 # Instructions
 
 ## Choose your hosting
@@ -29,6 +29,29 @@ If you already have a key it can be found in “c:\Users\user\.ssh\id_rsa.pub”
 ![alt text](https://raw.githubusercontent.com/ilbonte/node-telegram-bot-starter-kit/master/4.png)
 
 4. Open the file `server.js` and substitute the code with the example provided by https://github.com/yagop/node-telegram-bot-api
+
+```js
+var TelegramBot = require('node-telegram-bot-api');
+
+var token = 'YOUR_TELEGRAM_BOT_TOKEN';
+// Setup polling way
+var bot = new TelegramBot(token, {polling: true});
+
+// Matches /echo [whatever]
+bot.onText(/\/echo (.+)/, function (msg, match) {
+  var fromId = msg.from.id;
+  var resp = match[1];
+  bot.sendMessage(fromId, resp);
+});
+
+// Any kind of message
+bot.on('message', function (msg) {
+  var chatId = msg.chat.id;
+  // photo can be: a file path, a stream or a Telegram file_id
+  var photo = 'cats.png';
+  bot.sendPhoto(chatId, photo, {caption: 'Lovely kittens'});
+});
+```
 
 ## Get your token
 
