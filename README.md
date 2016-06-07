@@ -13,7 +13,7 @@ How to set up a Telegram Bot using Node.js and [node-telegram-bot-api](https://g
 4. Choose your public url and the region then click “Create Application” (this may take a few seconds)
 
 5. In the next step click “Yes, help me get started” and insert your public SSH key.
-If you already have a key it can be found in “c:\Users\user\.ssh\id_rsa.pub” if you are on windows, otherwise in “~/.ssh/id_rsa”
+If you already have a key it can be found in “c:\Users\YOUR_USERNAME\\.ssh\id_rsa.pub” if you are on windows, otherwise in “~/.ssh/id_rsa”
 ![alt text](https://raw.githubusercontent.com/ilbonte/node-telegram-bot-starter-kit/master/2.png)
 
 6. Press “Save” 
