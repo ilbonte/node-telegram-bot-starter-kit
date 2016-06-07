@@ -18,14 +18,14 @@ If you already have a key it can be found in “c:\Users\YOUR_USERNAME\\.ssh\id_
 
 6. Press “Save” 
 
-## Set up your repo and install -S node-telegram-bot-api
+## Set up your repo and install node-telegram-bot-api
 
 1. Clone the repository using the provided url
 ![alt text](https://raw.githubusercontent.com/ilbonte/node-telegram-bot-starter-kit/master/3.png)
 
 2. Enter the nodejs folder
 
-3. Run from the terminal `npm install node-telegram-bot-api`
+3. Run from the terminal `npm install -S node-telegram-bot-api`
 ![alt text](https://raw.githubusercontent.com/ilbonte/node-telegram-bot-starter-kit/master/4.png)
 
 4. Open the file `server.js` and substitute the code with the example provided by https://github.com/yagop/node-telegram-bot-api
